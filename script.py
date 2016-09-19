@@ -88,12 +88,12 @@ for i in range(len(lines)):
         final.write("Keyboard.write("+trans(res[2])+");")
         final.write("Keyboard.release(KEY_LEFT_CTRL);")
 
-    elif trans(res[0])!=None: #simple commands
+    elif trans(res[0])!=None: #simple command
         final.write("Keyboard.write("+trans(res[0])+");")
 
         
     else:
-        print "WRONG LOOPING"
+        print "Wrong at the loop"
         print "String is "+ x
         print "Its id is "+ str(i)
         
@@ -108,7 +108,10 @@ for i in range(len(lines)):
 final.close()
 
 
-######### AUTOMATIC FUNCTION MAKER (extern.h)
+######### FUNCTION MAKER
+
+with open(nume+".ard","r") as final:
+    content = final.read()
     
 ext = open("extern.h","w")
 
