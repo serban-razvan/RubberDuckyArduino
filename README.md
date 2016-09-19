@@ -18,4 +18,4 @@ After flashing, connect the board to the victim's PC and then after pressing on 
 
 ## Wiring
 
-![Schematic](http://imgur.com/bTy6J5c)
+![Schematic](http://i.imgur.com/bTy6J5c.png)
